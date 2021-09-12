@@ -39,6 +39,9 @@ class _TrainPageState extends State<TrainPage> {
           Container(
             margin: const EdgeInsets.only(top: 40.0),
             child: ElevatedButton(
+              style: ButtonStyle(
+                backgroundColor: MaterialStateProperty.all<Color>(Colors.red)
+              ),
               onPressed: (){
                 setState(() {
                   answer =  (answers..shuffle()).first;
